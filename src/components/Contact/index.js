@@ -1,6 +1,5 @@
-import React from 'react'
+import React, { useState, useRef } from "react";
 import styled from 'styled-components'
-import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import { Snackbar } from '@mui/material';
 
@@ -114,19 +113,65 @@ const Contact = () => {
 
   //hooks
   const [open, setOpen] = React.useState(false);
+
+  const [formData, setFormData] = useState({
+    from_email: "",
+    from_name: "",
+    subject: "",
+    message: "",
+  });
+  const [errors, setErrors] = useState({});
   const form = useRef();
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    emailjs.sendForm('service_zvz5sdb', 'template_6gjsgs1', e.target, 'Hfx6SIMK9H5ZAN4qS')
-      .then((result) => {
-        setOpen(true);
-        e.target.reset();
-      }, (error) => {
-        console.log(error.text);
-      });
-  }
+ // Validation function
+ const validateForm = () => {
+  let newErrors = {};
 
+  if (!formData.from_email) {
+    newErrors.from_email = "Email is required";
+  } else if (!/\S+@\S+\.\S+/.test(formData.from_email)) {
+    newErrors.from_email = "Invalid email format";
+  }
+  if (!formData.from_name) newErrors.from_name = "Name is required";
+  if (!formData.subject) newErrors.subject = "Subject is required";
+  if (!formData.message) newErrors.message = "Message cannot be empty";
+
+  setErrors(newErrors);
+  return Object.keys(newErrors).length === 0;
+};
+
+ // Handle form submission
+ const handleSubmit = (e) => {
+  e.preventDefault();
+
+  if (!validateForm()) return;
+
+  // Update the message input field directly
+  const updatedMessage = `${formData.message}\n\nFrom: ${formData.from_email}`;
+
+  // Update the message field value in the form
+  e.target.message.value = updatedMessage;
+
+  // Now send the form with the updated message
+  emailjs
+    .sendForm("service_zvz5sdb", "template_6gjsgs1", e.target, "Hfx6SIMK9H5ZAN4qS")
+    .then(
+      (result) => {
+        setOpen(true);
+        setFormData({ from_email: "", from_name: "", subject: "", message: "" }); // Reset form state
+        e.target.reset();
+      },
+      (error) => {
+        console.log(error.text);
+      }
+    );
+};
+
+
+// Handle input change
+const handleChange = (e) => {
+  setFormData({ ...formData, [e.target.name]: e.target.value });
+};
 
 
   return (
@@ -136,16 +181,47 @@ const Contact = () => {
         <Desc>Feel free to reach out to me for any questions or opportunities!</Desc>
         <ContactForm ref={form} onSubmit={handleSubmit}>
           <ContactTitle>Email Me 🚀</ContactTitle>
-          <ContactInput placeholder="Your Email" name="from_email" />
-          <ContactInput placeholder="Your Name" name="from_name" />
-          <ContactInput placeholder="Subject" name="subject" />
-          <ContactInputMessage placeholder="Message" rows="4" name="message" />
+
+          <ContactInput
+            placeholder="Your Email"
+            name="from_email"
+            value={formData.from_email}
+            onChange={handleChange}
+          />
+          {errors.from_email && <span style={{ color: "red" }}>{errors.from_email}</span>}
+
+          <ContactInput
+            placeholder="Your Name"
+            name="from_name"
+            value={formData.from_name}
+            onChange={handleChange}
+          />
+          {errors.from_name && <span style={{ color: "red" }}>{errors.from_name}</span>}
+
+          <ContactInput
+            placeholder="Subject"
+            name="subject"
+            value={formData.subject}
+            onChange={handleChange}
+          />
+          {errors.subject && <span style={{ color: "red" }}>{errors.subject}</span>}
+
+          <ContactInputMessage
+            placeholder="Message"
+            rows="4"
+            name="message"
+            value={formData.message}
+            onChange={handleChange}
+          />
+          {errors.message && <span style={{ color: "red" }}>{errors.message}</span>}
+
           <ContactButton type="submit" value="Send" />
         </ContactForm>
+
         <Snackbar
           open={open}
           autoHideDuration={6000}
-          onClose={()=>setOpen(false)}
+          onClose={() => setOpen(false)}
           message="Email sent successfully!"
           severity="success"
         />

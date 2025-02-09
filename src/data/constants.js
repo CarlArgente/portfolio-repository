@@ -6,6 +6,7 @@ import Inventory from "../images/Project_Inventory.png";
 import AudioNex from "../images/Project_AudioNex.png";
 import Tecs from "../images/Project_Tecs.png";
 import Voting from "../images/Project_Voting.png";
+import Zookie from "../images/Project_Zookie.jpg"
 import Zyrus from '../images/person_zyrus.jpg';
 import Din from '../images/person_din.jpg';
 import Enrico from '../images/person_enrico.jpg';
@@ -22,7 +23,7 @@ export const Bio = {
     "Versatile Microsoft DevOps and Developer with expertise in automating build, deployment, and release processes. Proficient in Azure DevOps, CI/CD pipelines, and coding. Adept at optimizing development workflows for efficiency and reliability.",
   github: "https://github.com/CarlArgente",
   resume:
-    "https://drive.google.com/file/d/1ffZrcMcn8UatXGIaautbbqpV7ADNaETA/view?usp=sharing",
+    "https://drive.google.com/file/d/1aJpnYuZQ1w3MlQayYeo36q4QLwllO5_W/view?usp=sharing",
   linkedin: "https://www.linkedin.com/in/carl-argente/",
   twitter: "https://twitter.com/argente_carl",
   insta: "https://www.instagram.com/ce_argente/",
@@ -96,6 +97,16 @@ export const skills = [
         image:
           "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg",
       },
+      {
+        name: "Razor Pages",
+        image:
+          "https://api.nuget.org/v3-flatcontainer/razor.templating.core/2.1.0/icon"
+      },
+      {
+        name: "Blazor",
+        image:
+          "https://miro.medium.com/v2/resize:fit:1000/0*d4sKht87TQOAmZom.png",
+      },
     ],
   },
   {
@@ -133,6 +144,11 @@ export const skills = [
         name: "Graph API",
         image:
           "https://www.drupal.org/files/styles/grid-3-2x/public/project-images/Graph%20API%20logo.png?itok=B8Gk4HZb",
+      },
+      {
+        name: "Bicep",
+        image:
+          "https://github.com/Azure/ALZ-Bicep/wiki/media/bicep-logo.png",
       },
     ],
   },
@@ -202,12 +218,42 @@ export const skills = [
       {
         name: "Postman",
         image:
-          "https://camo.githubusercontent.com/93b32389bf746009ca2370de7fe06c3b5146f4c99d99df65994f9ced0ba41685/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f676574706f73746d616e2f676574706f73746d616e2d69636f6e2e737667",
+          "https://w7.pngwing.com/pngs/28/245/png-transparent-postman-hd-logo-thumbnail.png",
       },
       {
         name: "Figma",
         image:
-          "https://camo.githubusercontent.com/ed93c2b000a76ceaad1503e7eb9356591b885227e82a36a005b9d3498b303ba5/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f6669676d612f6669676d612d69636f6e2e737667",
+          "https://cdn4.iconfinder.com/data/icons/logos-brands-in-colors/3000/figma-logo-512.png",
+      },
+      {
+        name: "Draw.io",
+        image:
+          "https://static-00.iconduck.com/assets.00/file-type-drawio-icon-2048x2048-dxjfklgq.png",
+      },
+      {
+        name: "Github",
+        image:
+          "https://cdn-icons-png.flaticon.com/512/25/25231.png",
+      },
+      {
+        name: "Canva",
+        image:
+          "https://freelogopng.com/images/all_img/1656733637logo-canva-png.png",
+      },
+      {
+        name: "Trello",
+        image:
+          "https://seeklogo.com/images/T/trello-logo-CE7B690E34-seeklogo.com.png",
+      },
+      {
+        name: "Discord",
+        image:
+          "https://cdn.worldvectorlogo.com/logos/discord-6.svg",
+      },
+      {
+        name: "Notion",
+        image:
+          "https://upload.wikimedia.org/wikipedia/commons/4/45/Notion_app_logo.png",
       },
     ],
   },
@@ -222,12 +268,12 @@ export const skills = [
       {
         name: "Git",
         image:
-          "https://camo.githubusercontent.com/fbfcb9e3dc648adc93bef37c718db16c52f617ad055a26de6dc3c21865c3321d/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f6769742d73636d2f6769742d73636d2d69636f6e2e737667",
+          "https://cdn-icons-png.flaticon.com/512/25/25231.png",
       },
       {
-        name: "GitHub",
+        name: "Microsoft IIS",
         image:
-          "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png",
+          "https://logowik.com/content/uploads/images/microsoft-iis2928.jpg",
       },
     ],
   },
@@ -239,7 +285,7 @@ export const experiences = [
     img: "data:image/png;base64,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",
     role: "Software Developer",
     company: "WNO Electronics Trading",
-    date: "March 2021 - August 2022",
+    date: "Mar 2021 - August 2022",
     desc: [
       "Wrote a back-end code and design a front-end of an application.",
       "Created an entity relation diagram of database of application.",
@@ -291,7 +337,7 @@ export const experiences = [
     img: "data:image/png;base64,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",
     role: "Microsoft Technologies Developer",
     company: "GECO Philippines Inc.",
-    date: "Sept 2023 - Present",
+    date: "Sept 2023 - June 2024",
     desc: [
       "Assigned to lead the back-end team that has responsibility on creation of API endpoints.",
       "Developed a design pattern for maintainable and readable code.",
@@ -316,6 +362,34 @@ export const experiences = [
       "RabbitMQ",
       "Tailwind",
       "SignalR",
+    ],
+  },
+  {
+    id: 3,
+    img : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTU3ZLlnEiHCdo2PM0_8l57P9xHOCshOPpquQ&s",
+    role: "Full Stack .Net Core Developer",
+    company: "MVCO Talent Outsourcing",
+    date: "Mar 2024 - Present",
+    desc: [
+      "Developed a web-based software for album customization.",
+      "Developed a design pattern for maintainable and readable code.",
+      "Managed deployment and maintenance on IIS",
+      "Oversaw the overall progress and improvement of the application.",
+      "Develop automation and processes to enable teams to deploy, manage scale and monitor their applications in data centers and in cloud.",
+      "Focused on image manipulation for enhanced customization."
+    ],
+    skills: [
+      "Microsoft IIS",
+      "Git",
+      "ASP.NET Core Web API 6",
+      "ASP.NET Blazor Server",
+      "ASP.NET MVC",
+      "HTML/CSS",
+      "Bootstrap 5,",
+      "RabbitMQ",
+      "SignalR",
+      "Authorize.NET",
+      "FedEx",
     ],
   },
 ];
@@ -354,7 +428,7 @@ export const projects = [
   {
     id: 9,
     title: "Eaaats!",
-    date: "March 2021 - August 2022",
+    date: "Mar 2021 - Aug 2022",
     description: "EAAATS! Point of Sale is a cutting-edge solution tailored for Food and Beverage businesses, revolutionizing the way they operate. This project seamlessly integrates technology to streamline and enhance the efficiency of sales processes. With user-friendly interfaces and robust features, EAAATS! empowers businesses to manage transactions, inventory, and customer interactions with ease. Whether you're a small cafe or a bustling restaurant, EAAATS! is designed to optimize operations, improve customer service, and provide real-time insights. Elevate your F&B business with this innovative Point of Sale system, a comprehensive tool for modern and forward-thinking establishments.",
     image: Eaaats,
     tags: [
@@ -377,7 +451,7 @@ export const projects = [
   {
     id: 0,
     title: "EcoPos",
-    date: "March 2021 - August 2022",
+    date: "Mar 2021 - Aug 2022",
     description: "Introducing EcoPOS A state-of-the-art Point of Sale system meticulously crafted for Retail and Wholesale businesses committed to eco-friendly practices. This innovative project combines efficiency with sustainability, offering a seamless platform to manage transactions, inventory, and customer interactions. EcoPOS not only streamlines operations but also reduces environmental impact by promoting paperless transactions and energy-efficient processes. Tailored for both retail and wholesale enterprises, this solution enhances productivity, minimizes waste, and provides insightful analytics. Elevate your business with EcoPOS—the eco-conscious choice for those who value both operational excellence and environmental responsibility.",
     image: Ecopos,
     tags: [
@@ -468,7 +542,7 @@ export const projects = [
   {
     id: 10,
     title: "AudioNex",
-    date: "October 2023 - Present",
+    date: "Oct 2023 - Jun 2024",
     description:
       "AudioNex is a sophisticated Client Audio Distribution & Management System spanning across Asia. Elevate your audio experience with seamless distribution and centralized management. A powerful tool designed to optimize audio content delivery for an immersive and dynamic user experience.",
     image: AudioNex,
@@ -511,7 +585,7 @@ export const projects = [
   {
     id: 5,
     title: "CSG",
-    date: "Feb 2020 - March 2020",
+    date: "Feb 2020 - Mar 2020",
     description: "CSG stands as the cornerstone of the democratic process at STI-College Ortigas-Cainta, facilitating transparent and efficient elections. This user-friendly application ensures secure voting, contributing to a robust democratic environment within the educational institution.",
     image: Voting,
     tags: [
@@ -525,6 +599,29 @@ export const projects = [
       "Custom Auth"
     ],
     category: "Voting Management",
+    github: "https://github.com/rishavchanda/Todo-Web-App",
+    webapp: "https://rishav-react-todo.netlify.app/",
+  },
+  {
+    id: 5,
+    title: "ZookiePro",
+    date: "Mar 2024 - Present",
+    description: "Zookbinders creates high-quality, handcrafted photo albums for professional photographers. Offering customizable designs, premium materials, and expert craftsmanship, they ensure lasting keepsakes. Their user-friendly website simplifies ordering, allowing photographers to design personalized albums effortlessly. With a focus on elegance and durability, Zookbinders delivers stunning albums to preserve cherished memories.",
+    image: Zookie,
+    tags: [
+      "Microsoft IIS",
+      "Git",
+      "ASP.NET Blazor Server",
+      "ASP.NET MVC",
+      "HTML/CSS",
+      "Bootstrap 5,",
+      "RabbitMQ",
+      "SignalR",
+      "Authorize.NET",
+      "FedEx",
+      "ImageSharp",
+    ],
+    category: "Warehouse Management",
     github: "https://github.com/rishavchanda/Todo-Web-App",
     webapp: "https://rishav-react-todo.netlify.app/",
   },
