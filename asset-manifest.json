@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/portfolio-repository/static/css/main.cf8a0add.css",
-    "main.js": "/portfolio-repository/static/js/main.dc222ebf.js",
-    "static/media/person_zyrus.jpg": "/portfolio-repository/static/media/person_zyrus.ba7b8cd82b8ef3bcc9d6.jpg",
-    "static/media/Project_Zookie.jpg": "/portfolio-repository/static/media/Project_Zookie.78e75649aa83a8368599.jpg",
-    "static/media/Project_AudioNex.png": "/portfolio-repository/static/media/Project_AudioNex.5b96f2bf69c425e86f42.png",
-    "static/media/Project_Voting.png": "/portfolio-repository/static/media/Project_Voting.f0507fd611ae34390277.png",
-    "static/media/carlArgente.jpg": "/portfolio-repository/static/media/carlArgente.0f74dbe0c26b0646074c.jpg",
-    "static/media/Project_DC.png": "/portfolio-repository/static/media/Project_DC.25ba29b57886019abe22.png",
-    "static/media/Project_Tecs.png": "/portfolio-repository/static/media/Project_Tecs.4ff4703115c54ac59ede.png",
-    "static/media/Project_EcoPOS.png": "/portfolio-repository/static/media/Project_EcoPOS.865a520e0068f4456820.png",
-    "static/media/Project_Inventory.png": "/portfolio-repository/static/media/Project_Inventory.6dd86cafd662202db28e.png",
-    "static/media/person_din.jpg": "/portfolio-repository/static/media/person_din.21c322fc860144d16694.jpg",
-    "static/media/Project_EAAATS.png": "/portfolio-repository/static/media/Project_EAAATS.e85973852275b25bc6f4.png",
-    "static/media/person_enrico.jpg": "/portfolio-repository/static/media/person_enrico.c525061ed3318c619bd1.jpg",
-    "static/media/Project_DJ.png": "/portfolio-repository/static/media/Project_DJ.0228bf2dc895bb863b3a.png",
-    "index.html": "/portfolio-repository/index.html",
-    "main.cf8a0add.css.map": "/portfolio-repository/static/css/main.cf8a0add.css.map",
-    "main.dc222ebf.js.map": "/portfolio-repository/static/js/main.dc222ebf.js.map"
+    "main.css": "/portfolio-2025/static/css/main.cf8a0add.css",
+    "main.js": "/portfolio-2025/static/js/main.be32d569.js",
+    "static/media/person_zyrus.jpg": "/portfolio-2025/static/media/person_zyrus.ba7b8cd82b8ef3bcc9d6.jpg",
+    "static/media/Project_Zookie.jpg": "/portfolio-2025/static/media/Project_Zookie.78e75649aa83a8368599.jpg",
+    "static/media/Project_AudioNex.png": "/portfolio-2025/static/media/Project_AudioNex.5b96f2bf69c425e86f42.png",
+    "static/media/Project_Voting.png": "/portfolio-2025/static/media/Project_Voting.f0507fd611ae34390277.png",
+    "static/media/carlArgente.jpg": "/portfolio-2025/static/media/carlArgente.0f74dbe0c26b0646074c.jpg",
+    "static/media/Project_DC.png": "/portfolio-2025/static/media/Project_DC.25ba29b57886019abe22.png",
+    "static/media/Project_Tecs.png": "/portfolio-2025/static/media/Project_Tecs.4ff4703115c54ac59ede.png",
+    "static/media/Project_EcoPOS.png": "/portfolio-2025/static/media/Project_EcoPOS.865a520e0068f4456820.png",
+    "static/media/Project_Inventory.png": "/portfolio-2025/static/media/Project_Inventory.6dd86cafd662202db28e.png",
+    "static/media/person_din.jpg": "/portfolio-2025/static/media/person_din.21c322fc860144d16694.jpg",
+    "static/media/Project_EAAATS.png": "/portfolio-2025/static/media/Project_EAAATS.e85973852275b25bc6f4.png",
+    "static/media/person_enrico.jpg": "/portfolio-2025/static/media/person_enrico.c525061ed3318c619bd1.jpg",
+    "static/media/Project_DJ.png": "/portfolio-2025/static/media/Project_DJ.0228bf2dc895bb863b3a.png",
+    "index.html": "/portfolio-2025/index.html",
+    "main.cf8a0add.css.map": "/portfolio-2025/static/css/main.cf8a0add.css.map",
+    "main.be32d569.js.map": "/portfolio-2025/static/js/main.be32d569.js.map"
   },
   "entrypoints": [
     "static/css/main.cf8a0add.css",
-    "static/js/main.dc222ebf.js"
+    "static/js/main.be32d569.js"
   ]
 }
