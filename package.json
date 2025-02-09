@@ -1,5 +1,5 @@
 {
-  "hompage" : "http://CarlArgente.github.io/portfolio-2025",
+  "hompage": "http://CarlArgente.github.io/portfolio-2025",
   "name": "carl-argente-portfolio",
   "version": "0.1.0",
   "private": true,
@@ -54,6 +54,6 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^6.1.0"
+    "gh-pages": "^6.3.0"
   }
 }
