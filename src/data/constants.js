@@ -14,7 +14,7 @@ import Enrico from '../images/person_enrico.jpg';
 export const Bio = {
   name: "Carl Emerson Llamera Argente",
   roles: [
-    "Full Stack .NET Developer",
+    "Full Stack Developer",
     "DevOps Engineer",
     "Web Developer",
     "UI/UX Designer",
